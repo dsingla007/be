@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Header Section */
+        .header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #f4f4f4;
+        }
+
+        #logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .about-content {
+            max-width: 50%;
+        }
+
+        .about-img img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Courses Section */
+        .courses {
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .course-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .course-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            margin: 10px;
+        }
+
+        .view-more-btn {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .gallery-row img {
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        /* Recruiters Section */
+        .container {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <span id="logo-text">Chitkara University</span>
+            </a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h1>Chitkara University</h1>
+            <p>Chitkara University is a private university in India with its campus in Punjab. 
+                It offers undergraduate, postgraduate, and doctoral programs 
+                in fields like Engineering, Management, Pharmacy, and other courses in Health Sciences,
+                Nursing, Hospitality, Art & Design, Event Management, Mass Communication, etc.</p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+        <div class="about-img">
+            <img src="images/about.jpg" alt="About Chitkara University">
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <h1>Courses We Offer</h1>
+        <p>Explore our diverse range of over 100 courses designed to equip you with the skills and knowledge for a successful career.</p>
+
+        <div class="course-row">
+            <div class="course-box">
+                <h2>Bachelor of Engineering (B.E.) in Computer Science Engineering</h2>
+                <p>A comprehensive program focusing on computer systems, programming, and software development.</p>
+            </div>
+            <div class="course-box">
+                <h2>Bachelor of Business Administration (BBA)</h2>
+                <p>An undergraduate degree that provides a solid foundation in business principles and practices.</p>
+            </div>
+            <div class="course-box">
+                <h2>Bachelor of Pharmacy (B.Pharm.)</h2>
+                <p>A program that prepares students for careers in the pharmaceutical industry, focusing on drug development and distribution.</p>
+            </div>
+        </div>
+
+        <div class="course-row">
+            <div class="course-box">
+                <h2>Bachelor of Design (B.Des.)</h2>
+                <p>A creative program that covers various design disciplines, including graphic, product, and fashion design.</p>
+            </div>
+            <div class="course-box">
+                <h2>Bachelor of Commerce (B.Com.)</h2>
+                <p>An undergraduate degree focusing on commerce, accounting, and business law.</p>
+            </div>
+            <div class="course-box">
+                <h2>Bachelor of Science in Nursing (B.Sc. Nursing)</h2>
+                <p>A program that trains students in nursing practices, preparing them for roles in healthcare settings.</p>
+            </div>
+        </div>
+
+        <a href="courses.html" class="view-more-btn">View More Courses</a>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h1>Photo Gallery</h1>
+        <p>Explore our campus, facilities, and events through our photo gallery.</p>
+
+        <div class="gallery-row">
+            <img src="image/CUB4-Top-10-reasons-why-Chitkara-University-is-the-best-University-in-North-India.jpg" alt="Gallery 1">
+            <img src="image/images.jpeg" alt="Gallery 2">
+            <img src="image/images (1).jpeg" alt="Gallery 3">
+        </div>
+
+        <a href="gallery.html" class="view-more-btn">View More Photos</a>
+    </section>
+
+    <section class="events">
+        <h1>Upcoming Events</h1>
+        <p>Check out our upcoming events and stay updated with the latest happenings at Chitkara University.</p>
+    </section>
+
+    <!-- give code of slide show companies using bootstrap 
+     take more than 10 companies-->
+     <div class="container">
+        <h1>Top Recruiters Company</h1>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Deloitte.svg" alt="Deloitte">
+            <img src="https://www.bharatbiotech.com/images/logo.png" alt="Bharat Biotech">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Adobe_Corporate_Logo.png" alt="Adobe">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Flipkart_logo.png" alt="Flipkart">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Accenture_logo.png" alt="Accenture">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Cognizant_Logo.svg" alt="Cognizant">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys">
+        </div>
+    </div>
+    
+</body>
+</html>
